@@ -16,6 +16,8 @@
     "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx"
   },
   "dependencies": {
+    "@fontsource/open-sans": "^4.2.2",
+    "@fontsource/rhodium-libre": "^4.2.3",
     "gatsby": "^3.2.1",
     "gatsby-plugin-typescript": "^3.3.0",
     "react": "^17.0.1",
