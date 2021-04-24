@@ -53,12 +53,14 @@ const TopBar = () => {
     return (
         <div style={topbar}>
             <div className="flex" style={{display: "flex-row"}}>
-                <div style={{fontFamily:"Rhodium Libre", fontSize: 36, marginLeft: 10, float: "left", cursor: "pointer"}}>TL;DR Websites</div>
+                <div style={{fontFamily:"Rhodium Libre", fontSize: 36, marginLeft: 10, float: "left", cursor: "pointer"}}>
+                    <Link to="/" style={{textDecoration: "none", color: "white"}}>TL;DR Websites</Link>
+                    </div>
                 <div style={button}>
-                    <Link to="auth"> Log Out</Link>
+                    <Link to="auth" style={{textDecoration:'none'}}> Log Out</Link>
                     </div>
                 <div style={{float: 'right', marginRight: '2%', marginTop: '0.25%', cursor: 'pointer'}}>
-                    <img src={imgURL} style={profPic}></img>
+                    <Link to="profile"><img src={imgURL} style={profPic}/></Link>
                 </div>
                 <div style={{float: 'right', marginRight: '2%', marginTop: '1.25%', fontFamily: "Open Sans"}}>Hi, {user}!</div>
             </div>
