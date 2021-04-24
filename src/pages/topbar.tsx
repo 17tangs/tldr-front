@@ -1,6 +1,7 @@
 import * as React from "react";
 import "@fontsource/rhodium-libre";
 import "@fontsource/open-sans";
+import { Link } from "gatsby";
 
 const topbar: React.CSSProperties = {
     height: 60,
@@ -53,7 +54,9 @@ const TopBar = () => {
         <div style={topbar}>
             <div className="flex" style={{display: "flex-row"}}>
                 <div style={{fontFamily:"Rhodium Libre", fontSize: 36, marginLeft: 10, float: "left", cursor: "pointer"}}>TL;DR Websites</div>
-                <div style={button}>Log Out</div>
+                <div style={button}>
+                    <Link to="auth"> Log Out</Link>
+                    </div>
                 <div style={{float: 'right', marginRight: '2%', marginTop: '0.25%', cursor: 'pointer'}}>
                     <img src={imgURL} style={profPic}></img>
                 </div>

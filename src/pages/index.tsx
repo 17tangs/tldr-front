@@ -1,14 +1,19 @@
 import * as React from "react";
 import Home from "./home";
-import {BrowserRouter, Switch, Route} from "react-router-dom";
+import Auth from "./auth";
+import { Router } from "@reach/router";
+import { RouteComponentProps } from '@reach/router';
+
+export interface ISignupPageProps extends RouteComponentProps {
+  path: string;
+}
 
 const IndexPage = () => {
   return (
-    <BrowserRouter>
-    <Switch>
-      <Route path="/" exact render={() => <Home/>}/>
-    </Switch>
-    </BrowserRouter>
+    <Router>
+      <Home path="/" />
+      <Auth path="/auth" />
+    </Router>
   );
 };
 
