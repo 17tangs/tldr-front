@@ -17,10 +17,30 @@ const topbar: React.CSSProperties = {
     zIndex: 2
 };
 
+const button: React.CSSProperties = {
+    backgroundColor: "white",
+    borderRadius: 15,
+    marginLeft: 5,
+    fontFamily: "Rhodium Libre",
+    fontSize: 18,
+    zIndex: 2,
+    color: "black",
+    height: 30,
+    paddingLeft: 5,
+    paddingRight: 5,
+    float: 'right',
+    marginRight: 10,
+    marginTop: '1%',
+    cursor: 'pointer'
+};
+
 const TopBar = () => {
     return (
         <div style={topbar}>
-            <div style={{fontFamily:"Rhodium Libre", fontSize: 36, marginLeft: 10}}>TL;DR Websites</div>
+            <div className="flex" style={{display: "flex-row"}}>
+                <div style={{fontFamily:"Rhodium Libre", fontSize: 36, marginLeft: 10, float: "left", cursor: "pointer"}}>TL;DR Websites</div>
+                <div style={button}>Log Out</div>
+            </div>
         </div>
     );
 };
