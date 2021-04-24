@@ -1,9 +1,14 @@
 import * as React from "react";
-import TopBar from "./topbar";
+import Home from "./home";
+import {BrowserRouter, Switch, Route} from "react-router-dom";
 
-// markup
 const IndexPage = () => {
-  return (<div><TopBar/></div>
+  return (
+    <BrowserRouter>
+    <Switch>
+      <Route path="/" exact render={() => <Home/>}/>
+    </Switch>
+    </BrowserRouter>
   );
 };
 
