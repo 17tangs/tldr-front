@@ -26,8 +26,9 @@ const button: React.CSSProperties = {
     zIndex: 2,
     color: "black",
     height: 30,
-    paddingLeft: 5,
-    paddingRight: 5,
+    paddingLeft: 10,
+    paddingRight: 10,
+    paddingTop: 5,
     float: 'right',
     marginRight: 10,
     marginTop: '1%',
@@ -56,7 +57,7 @@ const TopBar = () => {
                 <div style={{float: 'right', marginRight: '2%', marginTop: '0.25%', cursor: 'pointer'}}>
                     <img src={imgURL} style={profPic}></img>
                 </div>
-                <div style={{float: 'right', marginRight: '2%', marginTop: '1.25%', cursor: 'pointer', fontFamily: "Open Sans"}}>Hi, {user}!</div>
+                <div style={{float: 'right', marginRight: '2%', marginTop: '1.25%', fontFamily: "Open Sans"}}>Hi, {user}!</div>
             </div>
         </div>
     );
