@@ -2,18 +2,6 @@ import * as React from "react";
 import TopBar from "./topbar";
 import {ISignupPageProps} from './index';
 
-
-const inputField = {
-    border: '1px solid #808080',
-    display: 'flex',
-    borderRadius: '20px',
-    padding: '5px',
-    paddingLeft: '10px',
-    margin: '5px',
-    marginTop: '100px',
-    minHeight: '13px',
-};
-
 const button: React.CSSProperties = {
     backgroundColor: "black",
     borderRadius: 15,

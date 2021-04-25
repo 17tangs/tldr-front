@@ -5,6 +5,9 @@ import Profile from "./profile";
 import { Router } from "@reach/router";
 import { RouteComponentProps } from '@reach/router';
 
+import "@fontsource/rhodium-libre";
+import "@fontsource/open-sans";
+
 export interface ISignupPageProps extends RouteComponentProps {
   path: string;
 }

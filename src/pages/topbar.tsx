@@ -1,6 +1,4 @@
 import * as React from "react";
-import "@fontsource/rhodium-libre";
-import "@fontsource/open-sans";
 import { Link } from "gatsby";
 
 const topbar: React.CSSProperties = {
