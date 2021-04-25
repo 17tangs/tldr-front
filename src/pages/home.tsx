@@ -41,7 +41,7 @@ const greyButton: React.CSSProperties= {
 class Home extends React.Component<ISignupPageProps, {showInputField: boolean, input: string}> {
     constructor(props) {
         super(props);
-        this.state = {showInputField: false, input: ""};
+        this.state = {showInputField: true, input: ""};
     }
     render()
     {
