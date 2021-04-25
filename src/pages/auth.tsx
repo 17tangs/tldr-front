@@ -1,4 +1,4 @@
-import { Link } from "@reach/router";
+import { Link } from "gatsby";
 import * as React from "react";
 import {ISignupPageProps} from './index';
 
